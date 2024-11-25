@@ -1,0 +1,19 @@
+{
+  "name": "tuestilo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "node-sass --include-path scss ./scss/style.scss ./css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natyru19/PreEntrega2Rubio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natyru19/PreEntrega2Rubio/issues"
+  },
+  "homepage": "https://github.com/natyru19/PreEntrega2Rubio#readme"
+}

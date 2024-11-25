@@ -1,0 +1,64 @@
+/***** NOSOTROS *****/
+
+.main-nosotros {         
+    background-color: $color-fondo;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        color: $color-footer;
+        font-family:$font-h1;
+        font-size: 30px;
+        font-style: italic;
+        margin-top: 20px;
+    }
+
+    h2 {
+        color: $color-footer;
+        font-family:$font-h1;
+        font-size: 20px;
+        font-style: italic;
+        margin-top: 20px;
+    }
+    
+    .divnosotros {
+        display: flex;
+        align-items: center;
+
+        .nosotros-img img {
+            @include tamanio(400px, 400px);    
+            object-fit: cover;    
+            margin: 25px;
+            border-radius: 30px;    
+        }
+    }
+
+    p {
+        font-size: 16px;    
+        font-family: $font-p;
+        color: #967E76;    
+        padding: 10px;                
+    }
+
+    .divbeneficios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .bannernosotros img {
+            @include tamanio(60%, 100%);            
+            object-fit: cover;
+            padding: 30px;
+            border-radius: 50px;                 
+        }
+    }
+
+    .divinfo {
+        margin-left: 25px;
+        margin-bottom: 25px;
+    }
+}
+
+
+
+

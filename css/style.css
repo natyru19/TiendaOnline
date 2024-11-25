@@ -1,0 +1,491 @@
+/***** RESETEO DE ESTILOS *****/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  height: 100%;
+  width: 90%;
+  margin: 0 auto 0 auto;
+  max-width: 1200px;
+  background-color: #DEB6AB; }
+
+ul, li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.main-galeria .img-galeria img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+/***** HEADER *****/
+header {
+  background-color: #DEB6AB;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  height: 100px;
+  font-size: 20px;
+  top: 0;
+  width: 100%;
+  border-bottom: 2px;
+  border-bottom-color: #815B5B;
+  border-bottom-style: solid;
+  display: flex; }
+  header img {
+    width: 80px;
+    height: auto;
+    justify-self: flex-start;
+    margin: 10px;
+    border-radius: 50px; }
+  header nav {
+    width: 100%;
+    padding: 10px;
+    transition: all 0.3s; }
+    header nav ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px; }
+      header nav ul li {
+        padding: 5px; }
+        header nav ul li a {
+          color: #815B5B;
+          text-decoration: none;
+          background-position: 50%, 100%;
+          background-repeat: no-repeat;
+          background-size: 0%, 2px; }
+          header nav ul li a:hover {
+            text-decoration: underline; }
+
+/***** FOOTER *****/
+footer {
+  background-color: #815B5B;
+  display: flex;
+  justify-content: space-between;
+  height: 180px;
+  position: relative; }
+  footer div {
+    color: #F5EBE0;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 20px; }
+    footer div p .color-redes {
+      color: #E26868; }
+    footer div a {
+      color: #F5EBE0;
+      font-size: 25px;
+      display: inline-block;
+      padding: 3px; }
+      footer div a:hover {
+        transform: scale(1.2); }
+  footer .datos-footer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 5px;
+    margin-top: 60px; }
+  footer .redes-footer {
+    position: absolute;
+    right: 5px;
+    border-width: 2px;
+    margin-top: 30px; }
+
+/***** INDEX *****/
+.carrusel img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover; }
+
+.bienvenida {
+  background-color: #F5EBE0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 400px; }
+  .bienvenida h1 {
+    font-size: 28px;
+    padding: 50px 25px 50px 25px; }
+  .bienvenida p {
+    font-size: 25px;
+    color: #815B5B;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-style: italic;
+    justify-content: center; }
+  .bienvenida .otro-color {
+    color: #749f82; }
+  .bienvenida .dato-importante {
+    color: #B73E3E; }
+
+/***** NOSOTROS *****/
+.main-nosotros {
+  background-color: #DEB6AB;
+  display: flex;
+  flex-direction: column; }
+  .main-nosotros h1 {
+    color: #815B5B;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 30px;
+    font-style: italic;
+    margin-top: 20px; }
+  .main-nosotros h2 {
+    color: #815B5B;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 20px; }
+  .main-nosotros .divnosotros {
+    display: flex;
+    align-items: center; }
+    .main-nosotros .divnosotros .nosotros-img img {
+      height: 400px;
+      width: 400px;
+      object-fit: cover;
+      margin: 25px;
+      border-radius: 30px; }
+  .main-nosotros p {
+    font-size: 16px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: #967E76;
+    padding: 10px; }
+  .main-nosotros .divbeneficios {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .main-nosotros .divbeneficios .bannernosotros img {
+      height: 60%;
+      width: 100%;
+      object-fit: cover;
+      padding: 30px;
+      border-radius: 50px; }
+  .main-nosotros .divinfo {
+    margin-left: 25px;
+    margin-bottom: 25px; }
+
+/***** GALERIA *****/
+body {
+  height: 100%; }
+
+.main-galeria {
+  position: relative;
+  background-color: #DEB6AB;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .main-galeria h1 {
+    color: #815B5B;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 30px;
+    font-style: italic;
+    margin-top: 20px; }
+  .main-galeria .grilla {
+    width: 80%;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 'area1 area5 area5 area4' 'area1 area5 area5 area4' 'area3 area6 area2 area2';
+    gap: 5px;
+    justify-content: center; }
+  .main-galeria .grillados {
+    width: 80%;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 'area3 area1 area2 area2 area4' 'area3 area1 area2 area2 area4' 'area3 area1 area5 area5 area6';
+    gap: 5px;
+    justify-content: center; }
+  .main-galeria .galeria-estanteria {
+    grid-area: area1; }
+  .main-galeria .galeria-mesa {
+    grid-area: area2; }
+  .main-galeria .galeria-lampara {
+    grid-area: area3; }
+  .main-galeria .galeria-colgantes {
+    grid-area: area4; }
+  .main-galeria .galeria-juegojardin {
+    grid-area: area5; }
+  .main-galeria .galeria-mesajardin {
+    grid-area: area6; }
+  .main-galeria .img-galeria img {
+    border-radius: 10px;
+    justify-content: center;
+    transition: all 0.2s; }
+    .main-galeria .img-galeria img:hover {
+      scale: 1.2; }
+
+/***** PRODUCTOS *****/
+.main-productos {
+  background-color: #DEB6AB;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .main-productos h2 {
+    color: #815B5B;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 30px;
+    font-style: italic;
+    margin-top: 20px;
+    padding: 10px; }
+  .main-productos img {
+    box-shadow: 12px 5px 10px -2px rgba(152, 152, 152, 0.55);
+    border-radius: 10px;
+    object-fit: cover;
+    filter: grayscale(0.5); }
+    .main-productos img:hover {
+      filter: blur(0.3px); }
+  .main-productos .opciones {
+    display: flex;
+    justify-content: center;
+    gap: 10px; }
+    .main-productos .opciones p {
+      font-size: 14px; }
+    .main-productos .opciones .card {
+      background-color: #F5EBE0;
+      width: 25%; }
+  .main-productos .prod-destacados {
+    gap: 10px;
+    display: flex;
+    justify-content: center; }
+    .main-productos .prod-destacados .card {
+      background-color: #F5EBE0;
+      justify-content: center; }
+      .main-productos .prod-destacados .card .btn-productos {
+        background-color: #FF9F9F;
+        font-size: 15px;
+        color: #F5EBE0;
+        padding: 5px;
+        border-radius: 3px; }
+    .main-productos .prod-destacados .col-md-4 img {
+      height: 50%; }
+
+/************************************************/
+/****************** RESPONSIVE ******************/
+/************************************************/
+@media only screen and (max-width: 1024px) {
+  /*** HEADER ***/
+  header {
+    height: 100%;
+    width: 100%;
+    font-size: 18px; }
+    header img {
+      width: 60px; }
+  /*** INDEX ***/
+  .carrusel img {
+    width: 100%;
+    height: 250px; }
+  .bienvenida {
+    height: 200px; }
+    .bienvenida h1 {
+      font-size: 18px;
+      padding: 25px 12px 25px 12px; }
+    .bienvenida p {
+      font-size: 15px;
+      padding-top: 7px;
+      margin-bottom: 0px; }
+  /*** NOSOTROS ***/
+  .main-nosotros p {
+    font-size: 14px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: #967E76;
+    padding: 8px; }
+  .main-nosotros .divnosotros .nosotros-img img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    margin: 25px;
+    border-radius: 30px; }
+  .main-nosotros h1 {
+    color: #815B5B;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 30px;
+    font-style: italic;
+    margin-top: 20px; }
+  .main-nosotros h2 {
+    color: #815B5B;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 20px; }
+  .main-nosotros .divbeneficios .bannernosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    height: 300px; }
+    .main-nosotros .divbeneficios .bannernosotros img {
+      width: 100%; }
+  /*** PRODUCTOS ***/
+  .main-productos h2 {
+    font-size: 25px; }
+  .main-productos p {
+    font-size: 12px; }
+  /*** FOOTER ***/
+  footer {
+    height: 150px; }
+    footer .datos-footer {
+      margin-top: 75px;
+      font-size: 15px; }
+    footer .redes-footer {
+      margin-top: 25px;
+      font-size: 15px; } }
+
+/************************************************/
+@media only screen and (max-width: 700px) {
+  /*** HEADER ***/
+  header {
+    height: 100%;
+    width: 100%;
+    font-size: 16px; }
+  header img {
+    width: 40px; }
+  /*** INDEX ***/
+  .carrusel img {
+    width: 100%;
+    height: 250px; }
+  .bienvenida {
+    height: 200px; }
+    .bienvenida h1 {
+      font-size: 15px;
+      padding: 25px 12px 25px 12px; }
+    .bienvenida p {
+      font-size: 12px;
+      padding-top: 7px;
+      margin-bottom: 0px; }
+  /*** NOSOTROS ***/
+  .main-nosotros p {
+    font-size: 14px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: #967E76;
+    padding: 8px; }
+  .main-nosotros .divnosotros {
+    display: block; }
+    .main-nosotros .divnosotros p {
+      margin-top: 50px; }
+    .main-nosotros .divnosotros .nosotros-img {
+      height: 250px;
+      width: 60%;
+      margin: auto; }
+      .main-nosotros .divnosotros .nosotros-img img {
+        height: 100%;
+        width: 100%; }
+  .main-nosotros h1 {
+    color: #815B5B;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 30px;
+    font-style: italic;
+    margin-top: 20px; }
+  .main-nosotros h2 {
+    color: #815B5B;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 20px; }
+  .main-nosotros .divbeneficios .bannernosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    height: 300px; }
+    .main-nosotros .divbeneficios .bannernosotros img {
+      width: 100%; }
+  /*** PRODUCTOS ***/
+  .main-productos .opciones .card-text {
+    font-size: 10px; }
+  .main-productos .opciones h2 {
+    font-size: 20px; }
+  /*** FOOTER ***/
+  footer {
+    height: 150px; }
+    footer .datos-footer {
+      margin-top: 32px;
+      font-size: 10px; }
+    footer .redes-footer {
+      margin-top: 12px;
+      font-size: 10px; } }
+
+/************************************************/
+@media only screen and (max-width: 320px) {
+  /*** HEADER ***/
+  header {
+    height: 100%;
+    width: 100%;
+    font-size: 14px; }
+  header img {
+    width: 35px; }
+  /*** INDEX ***/
+  .carrusel img {
+    width: 100%;
+    height: 170px; }
+  .bienvenida h1 {
+    font-size: 16px;
+    display: contents; }
+  .bienvenida p {
+    font-size: 14px;
+    margin-top: 15px; }
+  /*** CONTACTO ***/
+  .col-12 {
+    width: 400px; }
+  .col-12 .input {
+    width: 380px; }
+  .col-12 .comentarios {
+    width: 380px; }
+  /*** NOSOTROS ***/
+  .main-nosotros p {
+    font-size: 12px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: #967E76;
+    padding: 8px; }
+  .main-nosotros .divnosotros {
+    display: block; }
+    .main-nosotros .divnosotros p {
+      margin-top: 50px; }
+    .main-nosotros .divnosotros .nosotros-img {
+      height: 200px;
+      width: 100%; }
+      .main-nosotros .divnosotros .nosotros-img img {
+        height: 100%;
+        width: 100%;
+        margin: 0px;
+        margin-top: 20px; }
+  .main-nosotros h1 {
+    color: #815B5B;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 30px;
+    font-style: italic;
+    margin-top: 20px; }
+  .main-nosotros h2 {
+    color: #815B5B;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 20px; }
+  .main-nosotros .divbeneficios .bannernosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    height: 200px; }
+    .main-nosotros .divbeneficios .bannernosotros img {
+      padding: 0px;
+      height: 100%;
+      width: 100%;
+      margin: 0px;
+      margin-top: 20px;
+      border-radius: 30px; }
+  /*** FOOTER ***/
+  footer {
+    height: 150px;
+    display: flex;
+    justify-content: center; }
+    footer .datos-footer {
+      display: none; }
+    footer .redes-footer {
+      text-align: center;
+      margin-top: 12px;
+      font-size: 12px; } }

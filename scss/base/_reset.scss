@@ -1,0 +1,24 @@
+
+/***** RESETEO DE ESTILOS *****/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+body {
+    height: 100%;
+    width: 90%;
+    margin: 0 auto 0 auto;
+    max-width: 1200px;
+    background-color: #DEB6AB;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;    
+}

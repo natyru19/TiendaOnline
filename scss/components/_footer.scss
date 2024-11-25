@@ -1,0 +1,48 @@
+/***** FOOTER *****/
+
+footer {
+    background-color: $color-footer;
+    display: flex;    
+    justify-content: space-between;    
+    height: 180px ;
+    position: relative;
+    
+    div {    
+        color: $color-bienvenida;
+        font-family: $font-footer;
+        font-size: 20px;
+        
+        p {
+            .color-redes {
+                color: $color-redes;
+            }
+        }
+        
+        
+        a {
+            color: $color-bienvenida;
+            font-size: 25px;
+            display:inline-block;
+            padding: 3px;
+            
+            &:hover {    
+                transform: scale(1.2); 
+            }
+        }
+    }
+    .datos-footer {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        left: 5px;    
+        margin-top: 60px;
+    }
+
+    .redes-footer {
+        position: absolute;
+        right: 5px;
+        border-width: 2px; 
+        margin-top: 30px;
+    }  
+    
+}

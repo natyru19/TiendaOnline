@@ -1,0 +1,85 @@
+/***** GALERIA *****/
+
+body {
+    height: 100%;
+}
+
+.main-galeria {
+    position: relative;    
+    background-color: $color-fondo;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        color: $color-footer;
+        font-family:$font-h1;
+        font-size: 30px;
+        font-style: italic;
+        margin-top: 20px;
+    }
+
+    .grilla {        
+        width: 80%;    
+        padding: 30px;
+        display: grid;    
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto; 
+        grid-template-areas: 
+            'area1 area5 area5 area4'
+            'area1 area5 area5 area4'
+            'area3 area6 area2 area2';
+        gap: 5px;
+        justify-content: center;            
+    }
+
+    .grillados {        
+        width: 80%;    
+        padding: 30px;
+        display: grid;    
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: auto; 
+        grid-template-areas: 
+            'area3 area1 area2 area2 area4'
+            'area3 area1 area2 area2 area4'
+            'area3 area1 area5 area5 area6';
+        gap: 5px;
+        justify-content: center;            
+    }
+
+    .galeria-estanteria {
+        grid-area: area1;    
+    }
+    
+    .galeria-mesa {    
+        grid-area: area2;    
+    }
+    
+    .galeria-lampara {    
+        grid-area: area3;        
+    }
+    
+    .galeria-colgantes {    
+        grid-area: area4;    
+    }
+    
+    .galeria-juegojardin {
+        grid-area: area5;    
+    }
+    
+    .galeria-mesajardin {    
+        grid-area: area6;    
+    }
+
+    .img-galeria img {
+        @extend %imagen;
+        border-radius: 10px;
+        justify-content: center;
+        transition: all 0.2s;
+        
+        &:hover {
+            scale: 1.2;
+        }
+    }        
+}
+
